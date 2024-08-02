@@ -157,7 +157,7 @@ img {
 /* -----ニュース----- */
 
 .container {
-    max-width: 1170px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -214,6 +214,104 @@ img {
     font-weight: 700;
     color: #DD1A57;
     letter-spacing: 0.05em;
+}
+
+/* -----service----- */
+.service__heading {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.service__heading::before {
+    content: "SERVICE";
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    z-index: -1;
+    font-size: 168px;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.service-list {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.service-list__item {
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+    background: #fff;
+}
+
+.service-list__img-wrapper {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.service-list__img {
+    font-size: 48px;
+    color: #DD1A57;
+    vertical-align: bottom;
+}
+
+.material-icons-round {
+    font-family: 'Material Icons Round';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.service-list__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.service-list__text {
+    font-size: 14px;
+    line-height: 1.8em;
+    font-weight: 700;
+}
+
+/* -----footer----- */
+.footer {
+    background: #DD1A57;
+    color: #fff;
+    padding: 60px 40px;
+}
+
+.footer-nav__list {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-nav__link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+
+.footer-nav__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.footer__copyright {
+    font-size: 12px;
 }
 
 @media screen and (max-width:767px){
